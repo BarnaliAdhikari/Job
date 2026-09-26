@@ -102,7 +102,6 @@
     padding:44px 36px;
   }
 
-  /* ===== Flip counter layout ===== */
   .counter-row{
     display:flex;
     justify-content:center;
@@ -138,7 +137,6 @@
     user-select:none;
   }
 
-  /* ===== Flip card ===== */
   .flip{
     position:relative;
     width:clamp(46px, 8vw, 68px);
@@ -253,12 +251,11 @@
 </div>
 
 <script>
-  const TARGET = new Date("2026-10-16T00:00:00+05:30");
+  const TARGET = new Date("2027-10-16T00:00:00+05:30");
   const START  = new Date("2026-07-13T00:00:00+05:30");
 
   const pad = n => String(n).padStart(2,'0');
 
-  // Build two flip digits inside each unit group
   const unitEls = {};
   document.querySelectorAll('.digit-pair').forEach(group => {
     const unit = group.dataset.unit;
